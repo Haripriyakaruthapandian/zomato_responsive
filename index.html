@@ -1,0 +1,347 @@
+<html>
+    <head>
+        <title>
+          Zomato Online Food order
+        </title>
+        <style>
+            header{
+                height:75px;
+                width: 100%;
+                background-color: #872a09f4;
+                color:white;
+            }
+            .sidemen{
+                height:500px;
+                width:20%;
+                margin-top: 2%;
+                margin-left: 5%;
+                border:2px solid black;
+                font-size: 26px;
+            }
+           
+            ul li{
+                font-size: 20px;
+                padding-top: 3%;
+            }
+        
+            footer{
+                height:50px;
+                background-color: #872a09f4;
+                color:white;
+                margin-top:3%;
+
+            }
+            .search{
+                height:30px;
+                width:72%;
+                margin-top: -33.5%;
+                margin-left:28%;
+                
+            
+            }
+            .containere{
+                height:470px;
+                width:72%;
+                margin-top: 4%;
+                margin-left:28%;
+               
+            }
+            .ma{
+            margin-top: -3%;
+            height: 80px;
+            width: 70%;
+            margin-left: 73%;
+            
+        }
+        .nav{
+            margin-left: 5%;
+            float: left;
+            
+            
+        }
+        .nav > a{
+            margin-top: 30%;
+
+            text-decoration: none;
+            color:white;
+            
+        }
+            .fa {
+           
+           padding: 10px;
+  font-size: 25px;
+ width: 30px;
+ border-radius: 25%;
+ text-align: center;
+ text-decoration: none;
+}
+
+
+.fa:hover {
+ opacity: 0.7;
+}
+
+
+
+.fa-facebook {
+   margin:5%;
+ background: #3B5998;
+ color: white;
+}
+
+
+.fa-instagram {
+   margin:5%;
+ background: #125688;
+ color: white;
+}
+.fa-youtube {
+   margin:5%;
+ background: #bb0000;
+ color: white;
+}
+#sear{
+width: 100%;
+height: 90%;
+border-radius: 5px;
+}
+.inclas{
+    height:220px;
+    width:92%;
+    margin-top: 0%;
+   padding: 25px;
+    box-shadow: 5px 10px 18px #888;
+    border-radius: 10px;
+}
+.inclas > img{
+    height:200px;
+    width: 320px;
+    border-radius: 10px;
+} 
+.cafename{
+    color: rgb(7, 80, 109);
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: -20%;
+    margin-left: 38%;
+}
+.addres{
+    font-size: 16px;
+
+    margin-top: 1%;
+    margin-left: 35%;
+}
+.btn1{
+    margin-top: 0%;
+    margin-left: 35%;
+}
+button{
+    height: 50px;
+    width: 150px;
+    border-style: none;
+    border-radius: 10px;
+}
+@media screen and (max-width:726px){
+    header{
+        width:100%;
+        height:100px;
+
+    }
+    .ma{
+    margin-top:0%;
+    margin-left: 0%;
+
+    }
+    .sidemen{
+        position: absolute;
+    width:726px;
+    margin-top:10%;
+    height:530px;
+}
+.search{
+    position: absolute;
+    width:85%;
+    top:320%;
+    margin-left:0%;
+
+}
+.containere{
+    position: absolute;
+    width:75%;
+    top:230%;
+    margin-left:6%;
+    height:1900px;
+}
+.inclas{
+    height:750px;
+    width:100%;
+}
+.cafename{
+    font-size: 25px;
+    position: absolute;
+margin-top: 2%;  
+margin-left: 5%;  
+}
+.addres{
+  
+margin-top: 35%; 
+margin-left: 5%;  
+
+}
+.btn1{
+  
+margin-top: 55%;  
+margin-left: 5%; 
+}
+footer{
+    position: absolute;
+    margin-top: 420%;;
+   
+    width:100%;
+    
+}
+
+}
+
+
+
+        </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+         <link rel="stylesheet" href="responsive.css">
+
+    </head>
+    <body>
+        <header>
+            <span style="font-size: x-large;font-weight: bolder;padding-left: 30px;font-size: 45px;">Zomato</span>
+            
+            <div class="ma">
+                <div class="nav">
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div class="nav">
+                    <a href="#"  class="fa fa-instagram"></a>
+                </div>
+                <div class="nav">
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </header>
+        <div class="sidemen">
+            <span style="font-size: 35px;font-weight: bolder;">Filter</span>
+            <hr/>
+            <ul style="list-style: none;">
+                <span style="padding-left:15%;font-weight: bold;">Cuisine Filter</span>
+                 <li><input type="radio" value="North Indian">North Indian</li>
+                 <li><input type="radio" value="South Indian">North Indian</li>
+                 <li><input type="radio" value="Chinese">Chinese</li>
+                 <li><input type="radio" value="Fast Food">Fast Food</li>
+                 <li><input type="radio" value="Street Food">Street Food</li>
+             </ul>
+             <hr/>
+             <ul style="list-style: none;">
+                <span style="padding-left:15%;font-weight: bold;">Cost Filter</span>
+                 <li><input type="radio" value="100-300">100-300</li>
+                 <li><input type="radio" value="301-600">301-600</li>
+                 <li><input type="radio" value="601-1000">601-1000</li>
+                 <li><input type="radio" value="1001-1200">1001-1200</li>
+                 
+                 
+             </ul>
+
+        </div>
+        <div class="search">
+            <input type="text" id="sear" width="100%" placeholder="Find Restaurants here..">
+            <div class="res">
+                <table cellspacing="7">
+                    <tr><td>Results</td></tr>
+                    <tr><td>Number of Results: 5</td></tr>
+                </table>
+            </div>
+            
+
+        </div>
+
+        <div class="containere">
+            <div class="inclas">
+                <img src="cafe.jfif" alt="ama_cafe">
+                <div class="cafename">
+                    <b>AMA Cafe</b>
+                </div>
+                <div class="addres">
+                    No 37,Khader Nawaz Road, Nungambakkam, Chennai
+                    <br>
+                    Poor
+                    <br>
+                    Rs. 370
+                </div>
+                <div class="btn1">
+                    <table cellspacing="7">
+                        <tr><td>        
+                                        <button type="button" style="background-color:#3B5998">Lunch</button>
+                        </td>
+                    <td>
+                        <button type="button" style="background-color:green">Night Life</button>
+
+                    </td></tr>
+                    <tr><td>        
+                        <button type="button" style="background-color:red">North Indian</button>
+        </td>
+    <td>
+        <button type="button" style="background-color:skyblue">Chinese</button>
+
+    </td></tr>
+       
+                    </table>
+                </div>
+
+            </div>
+            <div class="inclas">
+                <img src="food.jfif" alt="choudni">
+                <div class="cafename">
+                    <b>Chandni Chowk 2 Bangalore</b>
+                </div>
+                <div class="addres">
+                    House 6,New Colony, Adyar River Street, Chennai
+                    <br>
+                    Average
+                    <br>
+                    Rs. 450
+
+                </div>
+                <div class="btn1">
+                    <table cellspacing="7">
+                        <tr><td>        
+                                        <button type="button" style="background-color:#3B5998">Snacks</button>
+                        </td>
+                    <td>
+                        <button type="button" style="background-color:green">Lunch</button>
+
+                    </td></tr>
+                    <tr><td>        
+                        <button type="button" style="background-color:red">North Indian</button>
+        </td>
+    <td>
+        <button type="button" style="background-color:skyblue">South Indian</button>
+
+    </td></tr>
+       
+                    </table>
+                    
+                </div>
+
+            </div>
+        </div>
+    <br>
+    <br>
+
+
+
+
+        <footer>
+            <center>
+                &copy;Zomato developer.com
+            </center>
+
+        </footer>
+    </body>
+</html>
